@@ -4,10 +4,10 @@ const recipeController = require('../controllers/recipeController');
 
 /**
  * App Routes 
-*/
+ */
 
 router.get('/', recipeController.homepage);
-router.get('/recipe/:id', recipeController.exploreRecipe );
+router.get('/recipe/:id', recipeController.exploreRecipe);
 router.get('/categories', recipeController.exploreCategories);
 router.get('/categories/:id', recipeController.exploreCategoriesById);
 router.post('/search', recipeController.searchRecipe);
@@ -18,5 +18,5 @@ router.get('/submit-recipe', recipeController.submitRecipe);
 // router.get('/contact', recipeController.contact);
 router.post('/submit-recipe', recipeController.submitRecipeOnPost);
 
- 
+
 module.exports = router;
